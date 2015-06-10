@@ -27,7 +27,7 @@ type Response struct {
 
 var DefaultClient = &http.Client{
 	Transport: &http.Transport{
-		Proxy: http.ProxyFromEnvironment,
+		Proxy: nil,
 	},
 }
 
